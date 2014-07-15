@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp',[
   'ngRoute',
   'ngResource',
-  'ActiveResource',
-  'appControllers']);
+  'appControllers',
+  'ui.sortable']);
 
 var appControllers = angular.module('appControllers', []);

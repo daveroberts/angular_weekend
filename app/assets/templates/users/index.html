@@ -1,5 +1,3 @@
-
-
 <table>
   <thead>
     <tr>
@@ -9,12 +7,14 @@
     </tr>
   </thead>
     <tr ng-repeat="user in users">
-      <td>{{ user.username }}</td>
-      <td>{{ user.group.name }}</td>
+      <td><a ng-href="#/users/{{ user.id}}">{{user.username}}</a></td>
+      <td><a href="#/groups/{{user.group.id}}">{{ user.group.name }}</a></td>
       <td>
-        <div ng-repeat="permission in user.permissions">
+        <ol>
+          <li ng-repeat="permission in user.permissions">
           {{permission.name}}
-        </div>
+          </li>
+        </ol>
       </td>
     </tr>
 </table>

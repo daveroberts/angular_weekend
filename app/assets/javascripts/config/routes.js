@@ -9,6 +9,10 @@ myApp.config(['$routeProvider',
         templateUrl: 'assets/users/show.html',
         controller: 'UsersShowController'
       }).
+      when('/groups/:groupId', {
+        templateUrl: 'assets/groups/show.html',
+        controller: 'GroupsShowController'
+      }).
       otherwise({
         redirectTo: '/users'
       });

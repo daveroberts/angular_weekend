@@ -1,0 +1,25 @@
+<h1>{{group.name}}</h1>
+
+<h2>Permissions</h2>
+
+<div>All Perms: {{all_permissions}}</div>
+<h3>All Permissions</h3>
+<ul ui-sortable="sortableOptionsList[1]" ng-model="group.empty" style="border: 1px dashed red; padding: 1em;" class="apps-container">
+  <li ng-repeat="p in unselected_permissions">
+    {{p.name}}
+  </li>
+</ul>
+
+<h3>Group Permissions</h3>
+<ul ui-sortable="sortableOptionsList[0]" ng-model="group.permissions" class="apps-container">
+  <li ng-repeat="p in group.permissions">
+    {{p.name}}
+  </li>
+</ul>
+
+<div>Unselected: {{unselectedPermissions}}</div>
+
+<div>Group.permisisons: {{group.permissions}}</div>
+<div>Group.empty: {{group.empty}}</div>
+
+<div><a ng-href="#/groups">Back</a></div>

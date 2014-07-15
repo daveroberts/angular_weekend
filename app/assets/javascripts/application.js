@@ -9,17 +9,14 @@
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
-//= require requirejs/require
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require angular
 //= require angular-resource/angular-resource
 //= require angular-route/angular-route
-//= require async/lib/async
 //= require lodash
-//= require meld/meld
-//= require active-support/active-support
-//= require ngActiveResource/dist/ng-active-resource
+//= require sortable
 // Non library stuff below
 //= require initialize
 //= require_tree ./config

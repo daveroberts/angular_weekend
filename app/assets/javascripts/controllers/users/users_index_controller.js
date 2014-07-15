@@ -1,7 +1,5 @@
-appControllers.controller('UsersIndexController', ['$scope', '$http','User',
-  function ($scope, $http, User) {
-    debugger;
-    /*User.all.then(function(response) {
-      $scope.users = response;
-  });*/
-}]);
+appControllers.controller('UsersIndexController', ['$scope','User',
+  function ($scope, User) {
+    $scope.users = User.query();
+  }
+]);
